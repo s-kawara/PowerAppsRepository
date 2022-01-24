@@ -1,0 +1,31 @@
+mainScreen As screen:
+
+    inputText As text:
+        Default: =""
+        Height: =70
+        HintText: ="名前を入力"
+        Size: =21
+        Width: =560
+        X: =38
+        Y: =50
+        ZIndex: =1
+
+    DisplayButton As button:
+        Height: =142
+        OnSelect: =Set(retValue, "こんにちは、" & inputText.Text)
+        Size: =24
+        Text: ="メッセージ表示"
+        Width: =347
+        X: =158
+        Y: =182
+        ZIndex: =2
+
+    DisplayLabel As label:
+        Height: =70
+        Size: =21
+        Text: =retValue
+        Width: =560
+        X: =38
+        Y: =406
+        ZIndex: =3
+
