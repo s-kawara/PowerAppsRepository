@@ -12,7 +12,7 @@ mainScreen As screen:
 
     DisplayButton As button:
         Height: =142
-        OnSelect: =Set(retValue, "こんにちは、" & inputText.Text)
+        OnSelect: =Set(retValue, "こんにちは、" & inputText.Text & "さん!(GitHub 修正")
         Size: =24
         Text: ="メッセージ表示"
         Width: =347
